@@ -138,5 +138,5 @@ MonoBehaviour:
   Rotator: 5
   explosion: {fileID: 6419403420845617976, guid: 41176ecd1e29e08469373f05dde6e59c,
     type: 3}
-  gas: {fileID: 0}
+  gas: {fileID: 6862729853758557196, guid: a90dbaeb99f56af4c9a19cb193752710, type: 3}
   zwaartekrachtConstante: -0.01

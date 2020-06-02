@@ -25,7 +25,7 @@ public class zwaartescrip : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
                     {
                         snelheid += new Vector2(transform.up.x * Motorkracht , transform.up.y * Motorkracht);
-                Instantiate(explosion, transform.position, Quaternion.identity);
+                Instantiate(gas, transform.position, Quaternion.identity);
             }
 
                     if (Input.GetKey(KeyCode.A))
