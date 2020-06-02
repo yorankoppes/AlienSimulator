@@ -9,10 +9,10 @@ public class zwaartescrip : MonoBehaviour
     public float Rotator;
     public GameObject explosion;
     public GameObject gas;
+    bool isErGas = false;
+    GameObject ditGas;
 
     public float zwaartekrachtConstante = -0.02f;
-
-
 
     void FixedUpdate()
     {
@@ -23,21 +23,40 @@ public class zwaartescrip : MonoBehaviour
         if (speler)
         {
             if (Input.GetKey(KeyCode.W))
-                    {
-                        snelheid += new Vector2(transform.up.x * Motorkracht , transform.up.y * Motorkracht);
-                Instantiate(gas, transform.position, Quaternion.identity);
+            {
+                snelheid += new Vector2(transform.up.x * Motorkracht, transform.up.y * Motorkracht);
+                if (isErGas)
+                {
+                    ditGas.transform.position = transform.position;
+                    ditGas.transform.rotation = transform.rotation;
+                    ditGas.transform.Rotate(new Vector3(90, 90, 0));
+                }
+                    
+                else
+                {
+                    ditGas = Instantiate(gas, transform.position, transform.rotation);
+                    ditGas.transform.Rotate(new Vector3(90, 90, 0));
+                    isErGas = true;
+                }
+                    
             }
 
-                    if (Input.GetKey(KeyCode.A))
-                    {
-                        transform.Rotate(0 , 0, Rotator);
-                    }
-                    if (Input.GetKey(KeyCode.D))
-                    {
-                        transform.Rotate(0 , 0, -Rotator);
-                    }
-        }
+            if (Input.GetKeyUp(KeyCode.W))
+            {
+                Destroy(ditGas);
+                isErGas = false;
+            }
 
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(0 , 0, Rotator);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(0 , 0, -Rotator);
+            }
+        }
 
         transform.position += new Vector3(snelheid.x, snelheid.y, 0);
     }
