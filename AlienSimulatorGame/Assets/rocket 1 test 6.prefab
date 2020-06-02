@@ -91,7 +91,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 7086976814639252402}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: b649e5a50973b1841876e3b4fb3dd058, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
@@ -132,7 +132,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sterMassa: 1
+  speler: 0
   snelheid: {x: 0.08, y: 0}
   Motorkracht: 0.0005
   Rotator: 5
+  explosion: {fileID: 6419403420845617976, guid: 41176ecd1e29e08469373f05dde6e59c,
+    type: 3}
+  gas: {fileID: 0}
   zwaartekrachtConstante: -0.01
