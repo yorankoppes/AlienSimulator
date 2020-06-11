@@ -25,28 +25,20 @@ public class zwaartescrip : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 snelheid += new Vector2(transform.up.x * Motorkracht, transform.up.y * Motorkracht);
-                if (isErGas)
-                {
-                    ditGas.transform.position = transform.position;
-                    ditGas.transform.rotation = transform.rotation;
-                    ditGas.transform.Rotate(new Vector3(90, 90, 0));
-                }
                     
-                else
+                if (!isErGas)
                 {
-                    ditGas = Instantiate(gas, transform.position, transform.rotation);
+                    ditGas = Instantiate(gas, transform.position, transform.rotation, transform);
                     ditGas.transform.Rotate(new Vector3(90, 90, 0));
                     isErGas = true;
-                }
-                    
+                } 
             }
 
-            if (Input.GetKeyUp(KeyCode.W))
+            else if (isErGas)
             {
                 Destroy(ditGas);
                 isErGas = false;
             }
-
 
             if (Input.GetKey(KeyCode.A))
             {
@@ -64,6 +56,7 @@ public class zwaartescrip : MonoBehaviour
     void OnCollisionEnter2D()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(ditGas);
         Destroy(gameObject);
     }
 }

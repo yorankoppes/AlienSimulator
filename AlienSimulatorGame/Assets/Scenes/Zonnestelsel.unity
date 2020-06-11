@@ -132,37 +132,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: snelheid.x
-      value: -0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: speler
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 6419403420845617976, guid: 41176ecd1e29e08469373f05dde6e59c,
-        type: 3}
-    - target: {fileID: 7086976814639252406, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252406, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252406, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7086976814639252407, guid: 283af4f6908d68e4c940f16636636f60,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -216,6 +185,37 @@ PrefabInstance:
     - target: {fileID: 7086976814639252407, guid: 283af4f6908d68e4c940f16636636f60,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: snelheid.x
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: speler
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 6419403420845617976, guid: 41176ecd1e29e08469373f05dde6e59c,
+        type: 3}
+    - target: {fileID: 7086976814639252406, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252406, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252406, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -454,22 +454,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: snelheid.x
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: speler
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
-        type: 3}
-      propertyPath: explosion
-      value: 
-      objectReference: {fileID: 6419403420845617976, guid: 41176ecd1e29e08469373f05dde6e59c,
-        type: 3}
     - target: {fileID: 7086976814639252407, guid: 283af4f6908d68e4c940f16636636f60,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -525,5 +509,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: snelheid.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: speler
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086976814639252404, guid: 283af4f6908d68e4c940f16636636f60,
+        type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 6419403420845617976, guid: 41176ecd1e29e08469373f05dde6e59c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 283af4f6908d68e4c940f16636636f60, type: 3}
